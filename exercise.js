@@ -27,3 +27,19 @@ let user = {
 
 validateUser(user)
 
+
+const students = [
+    { name: "Alex", marks: 85, age: 19 },
+    { name: "Sam", marks: 42, age: 18 },
+    { name: "John", marks: 92, age: 20 },
+    { name: "Mike", marks: 65, age: 19 },
+    { name: "David", marks: 35, age: 17 }
+];
+
+let names = students.map(student => student.name)
+let pass = students.filter(student => student.marks >= 60)
+let john = students.find(student => student.name === "John")
+
+// console.log(names)
+// console.log(pass)
+// console.log(john)
